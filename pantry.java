@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class pantry{
     private ArrayList<items> storage = new ArrayList<>();
     public pantry()
