@@ -19,6 +19,8 @@ def insertionSort(items):
                 items[j + 1] = k
                 break
     print(items)
+def mergeSort(items):
+    
 
 
 
