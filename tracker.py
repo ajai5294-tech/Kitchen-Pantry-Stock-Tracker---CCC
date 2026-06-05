@@ -1,4 +1,4 @@
-items = [1,2,3,4,5,6]
+items = [2,4,3,6,5,1]
 for i in range(len(items)):
     min = i
     for j in range(i + 1, len(items)):
