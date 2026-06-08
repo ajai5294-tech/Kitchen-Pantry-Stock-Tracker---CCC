@@ -53,6 +53,15 @@ def sortMatrix(matrix):
     for row in matrix:
         selection_sort(row)
     return matrix
+def printRightTriangle(num):
+    i = 0
+    while i <= num:
+        x = 0
+        while x <= i:
+            print("*", end = " ")
+            x += 1
+        print()
+        i += 1
 matrix = [
     [2,3,7],
     [5,9,1],
@@ -67,3 +76,4 @@ printMatrix(matrix)
 printMatrix(createMatrix())
 printMatrix(fillMatrix(createMatrix()))
 printMatrix(sortMatrix(fillMatrix(createMatrix())))
+printRightTriangle(4)
