@@ -27,10 +27,16 @@ def printEvenTill10():
         else:
             print(i, end = ", ")
         i+=2
-
+def everyOther(items):
+    for i in range(2, len(items)):
+        if i + 2 <= len(items):
+            print(items[i])
+        else:
+            print(items[i], end = ", ")
 
 
 items = [2,4,3,6,5,1]
 selection_sort(items)
 insertionSort(items)
 printEvenTill10()
+everyOther()
