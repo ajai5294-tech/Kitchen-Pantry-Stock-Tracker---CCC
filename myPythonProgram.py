@@ -22,8 +22,7 @@ def insertionSort(items):
 def printEvenTill10():
     i = 0
     while i <= 10:
-        print(i)
-        print("\n")
+        print(f"{i}")
         i+=2
 
 
