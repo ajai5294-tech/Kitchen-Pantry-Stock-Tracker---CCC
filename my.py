@@ -47,7 +47,7 @@ def createMatrix():
 def fillMatrix(matrix):
     for i in range(len(matrix)):
         for j in range(len(matrix)):
-            matrix[i][j] = random.random()
+            matrix[i][j] = int(random.random() * 100)
     return matrix
 matrix = [
     [2,3,7],
