@@ -49,6 +49,10 @@ def fillMatrix(matrix):
         for j in range(len(matrix)):
             matrix[i][j] = int(random.random() * 100)
     return matrix
+def sortMatrix(matrix):
+    for row in matrix:
+        selection_sort(row)
+    return matrix
 matrix = [
     [2,3,7],
     [5,9,1],
@@ -62,3 +66,4 @@ everyOther(items)
 printMatrix(matrix)
 printMatrix(createMatrix())
 printMatrix(fillMatrix(createMatrix()))
+printMatrix(sortMatrix(fillMatrix(createMatrix())))
