@@ -28,8 +28,8 @@ def printEvenTill10():
             print(i, end = ", ")
         i+=2
 def everyOther(items):
-    for i in range(len(items), 2):
-        if i == len(items) or i == len(items) - 1:
+    for i in range(0, len(items), 2):
+        if i >= len(items) - 1:
             print(items[i])
         else:
             print(items[i], end = ", ")
