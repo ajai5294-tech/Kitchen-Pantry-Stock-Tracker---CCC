@@ -34,10 +34,9 @@ def everyOther(items):
         else:
             print(items[i], end = ", ")
 def printMatrix(matrix):
-    row = 0
-    for row in matrix:
-        for item in row:
-            if row == len(matrix) - 1:
+    for row_index, row in enumerate(matrix):
+        for item_index, item in enumerate(row):
+            if item_index == len(row) - 1:
                 print(item)
             else:
                 print(item, end = ", ")
