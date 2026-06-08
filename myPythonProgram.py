@@ -19,11 +19,15 @@ def insertionSort(items):
                 items[j + 1] = k
                 break
     print(items)
-def mergeSort(items):
-    
+def printEvenTill10():
+    while i <= 10:
+        print(i)
+        print("\n")
+        i+=2
 
 
 
 items = [2,4,3,6,5,1]
 selection_sort(items)
 insertionSort(items)
+printEvenTill10()
