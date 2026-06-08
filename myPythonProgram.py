@@ -39,4 +39,4 @@ items = [2,4,3,6,5,1]
 selection_sort(items)
 insertionSort(items)
 printEvenTill10()
-everyOther()
+everyOther(items)
