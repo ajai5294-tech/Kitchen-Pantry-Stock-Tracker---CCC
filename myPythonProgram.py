@@ -37,7 +37,7 @@ def printMatrix(matrix):
     row = 0
     for row in matrix:
         for item in row:
-            if row == len(matrix) - 1 and item == row[len(row) - 1]:
+            if row == len(matrix) - 1:
                 print(item)
             else:
                 print(item, end = ", ")
