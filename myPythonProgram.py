@@ -39,9 +39,9 @@ def printMatrix(matrix):
             print(item, end = ", ")
         print("\n")
 matrix = [
-    [2,3,7]
-    [5,9,1]
-    [7,2,4]
+    [2 , 3 , 7]
+    [5 , 9 , 1]
+    [7 , 2 , 4]
 ]
 items = [2,4,3,6,5,1]
 selection_sort(items)
