@@ -40,7 +40,9 @@ def printMatrix(matrix):
                 print(item)
             else:
                 print(item, end = ", ")
-        print()
+def createMatrix():
+    zeros_matrix = [[0 for _ in range(3)] for _ in range(3)]
+    return zeros_matrix
 matrix = [
     [2,3,7],
     [5,9,1],
@@ -52,3 +54,4 @@ insertionSort(items)
 printEvenTill10()
 everyOther(items)
 printMatrix(matrix)
+printMatrix(createMatrix())
