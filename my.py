@@ -45,9 +45,10 @@ def createMatrix():
     zeros_matrix = [[0 for _ in range(3)] for _ in range(3)]
     return zeros_matrix
 def fillMatrix(matrix):
-    for row in matrix:
-        for item in row:
-            item = random.random()
+    for i in range(len(matrix)):
+        for j in range(len(matrix)):
+            matrix[i][j] = random.random()
+    return matrix
 matrix = [
     [2,3,7],
     [5,9,1],
