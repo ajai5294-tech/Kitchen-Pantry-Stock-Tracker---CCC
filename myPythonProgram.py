@@ -34,7 +34,8 @@ def everyOther(items):
         else:
             print(items[i], end = ", ")
 def printMatrix(matrix):
-    for row in range(len(matrix)):
+    row = 0
+    for row in matrix:
         for item in row:
             print(item, end = ", ")
         print("\n")
