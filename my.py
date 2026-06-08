@@ -1,3 +1,4 @@
+import random
 def selection_sort(items):
     for i in range(len(items)):
         min = i
@@ -43,6 +44,10 @@ def printMatrix(matrix):
 def createMatrix():
     zeros_matrix = [[0 for _ in range(3)] for _ in range(3)]
     return zeros_matrix
+def fillMatrix(matrix):
+    for row in matrix:
+        for item in row:
+            item = random.random()
 matrix = [
     [2,3,7],
     [5,9,1],
@@ -55,3 +60,4 @@ printEvenTill10()
 everyOther(items)
 printMatrix(matrix)
 printMatrix(createMatrix())
+printMatrix(createMatrix(fillMatrix()))
