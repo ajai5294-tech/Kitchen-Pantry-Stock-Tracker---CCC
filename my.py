@@ -76,6 +76,19 @@ def counToNumber(n):
 def countToN():
     n = int(input("Enter a number: "))
     counToNumber(n)
+def guessingGame():
+    num = int(random.random() * 100)
+    print("Welcome to the number guessing game")
+    found = False
+    while found == False:
+        guess = int(input("Guess a number 0-100 inclusive: "))
+        if guess > num:
+            print("Too high")
+        if guess < num:
+            print("Too low")
+        if guess == num:
+            print("You win")
+            found = True
 matrix = [
     [2,3,7],
     [5,9,1],
@@ -93,3 +106,4 @@ printMatrix(sortMatrix(fillMatrix(createMatrix())))
 printRightTriangle(4)
 readName()
 countToN()
+guessingGame()
