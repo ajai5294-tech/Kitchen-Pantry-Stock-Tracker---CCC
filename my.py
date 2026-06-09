@@ -101,6 +101,10 @@ def findMax(items):
         if max < items[i]:
             max = items[i]
     print(max)
+def readFromFile():
+    with open ("data.csv", "r") as file:
+        for line in file:
+            print(line.strip())
 matrix = [
     [2,3,7],
     [5,9,1],
@@ -116,8 +120,9 @@ printMatrix(createMatrix())
 printMatrix(fillMatrix(createMatrix()))
 printMatrix(sortMatrix(fillMatrix(createMatrix())))
 printRightTriangle(4)
-readName()
-countToN()
-guessingGame()
+#readName()
+#countToN()
+#guessingGame()
 findMin(items)
 findMax(items)
+readFromFile()
