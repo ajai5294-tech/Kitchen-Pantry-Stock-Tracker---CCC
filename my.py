@@ -62,6 +62,20 @@ def printRightTriangle(num):
             x += 1
         print()
         i += 1
+def readName():
+    name = input("Enter your name: ")
+    print(f"Hi, {name}")
+def counToNumber(n):
+    i = 0
+    while i <= n:
+        if i == n:
+            print(i)
+        else:
+            print(i, end = ", ")
+        i += 1
+def countToN():
+    n = int(input("Enter a number: "))
+    counToNumber(n)
 matrix = [
     [2,3,7],
     [5,9,1],
@@ -77,3 +91,5 @@ printMatrix(createMatrix())
 printMatrix(fillMatrix(createMatrix()))
 printMatrix(sortMatrix(fillMatrix(createMatrix())))
 printRightTriangle(4)
+readName()
+countToN()
