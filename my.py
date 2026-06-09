@@ -89,6 +89,18 @@ def guessingGame():
         if guess == num:
             print("You win")
             found = True
+def findMin(items):
+    min = items[0]
+    for i in range(1, len(items)):
+        if min > items[i]:
+            min = items[i]
+    print(min)
+def findMax(items):
+    max = items[0]
+    for i in range(1, len(items)):
+        if max < items[i]:
+            max = items[i]
+    print(max)
 matrix = [
     [2,3,7],
     [5,9,1],
@@ -107,3 +119,5 @@ printRightTriangle(4)
 readName()
 countToN()
 guessingGame()
+findMin(items)
+findMax(items)
