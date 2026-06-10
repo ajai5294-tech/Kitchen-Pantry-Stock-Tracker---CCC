@@ -105,6 +105,17 @@ def readFromFile():
     with open ("data.csv", "r") as file:
         for line in file:
             print(line.strip())
+def createList():
+    list = []
+    for i in range(7):
+        list.append(int(random.random() * 100))
+    return list
+def printList(list):
+    for i in range(len(list)):
+        if i == len(list) - 1:
+            print(list[i])
+        else:
+            print(list[i], end = ", ")
 matrix = [
     [2,3,7],
     [5,9,1],
@@ -126,3 +137,4 @@ printRightTriangle(4)
 findMin(items)
 findMax(items)
 readFromFile()
+printList(createList())
