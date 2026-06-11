@@ -23,4 +23,5 @@ public class pantry{
             System.out.println("Nothing");
         }
     }
+    
 }

@@ -116,6 +116,18 @@ def printList(list):
             print(list[i])
         else:
             print(list[i], end = ", ")
+def appendList():
+    list = []
+    scan = input("Do you want to add an item? ")
+    while(True):
+        if(scan.lower() == "yes"):
+            item = input("What item would you like to add? ")
+            list.append(item)
+    for i in range(len(list)):
+        if i == len(list) - 1:
+            print(i)
+        else:
+            print(i , end = ", ")
 matrix = [
     [2,3,7],
     [5,9,1],
