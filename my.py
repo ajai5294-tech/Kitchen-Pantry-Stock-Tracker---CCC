@@ -128,6 +128,11 @@ def appendList():
             print(i)
         else:
             print(i , end = ", ")
+def isEven(num):
+    if num % 2 == 0:
+        print("is even")
+    else:
+        print("is odd")
 matrix = [
     [2,3,7],
     [5,9,1],
